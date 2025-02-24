@@ -17,7 +17,7 @@ html {
     background-color: #fea81e;
 }
 .Toko-Rinus-Logo-Frame {
-    width: 425px;
+    width: 300px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ a {
     align-items: center;
     height: 80px;
     border-radius: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     transition: 0.5s;
 }
 i {
@@ -77,6 +77,10 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.fa-solid fa-user-tie {
+    font-size: 50px;
+    color: #000000;
 }
 .Achtergrond-Landing-Page {
     width: 100%;
