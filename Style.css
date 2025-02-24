@@ -90,6 +90,7 @@ i {
     height: 725px;
     display: flex;
     background-repeat: no-repeat;
+    background-image: url("Afbeeldingen/Achtergrond2.png");
 }
 .Landing-Page-Links-Frame {
     height: 100%;
@@ -128,7 +129,7 @@ i {
     align-items: center;
 }
 .Voedsel-Afbeelding {
-    width: 460px;
+    width: 500px;
 }
 .Titel-Text {
     color: black;
