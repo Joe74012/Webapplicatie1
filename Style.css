@@ -1,0 +1,187 @@
+body,
+html {
+    margin: 0;
+}
+.Header-Frame {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+.Header-Frame-Bodem {
+    width: 100%;
+    height: 20px;
+    background-color: #fea81e;
+}
+.Toko-Rinus-Logo-Frame {
+    width: 425px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Toko-Rinus-Logo {
+    width: 200px;
+}
+a {
+    text-decoration: none;
+}
+.Toko-Rinus-Afbeelding {
+    width: 400px;
+    border-color: #F49800;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 15px;
+}
+.Zwarte-Text, .Header-Zwarte-Text {
+    color: black;
+    font-family: "Poppins", serif;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.Oranje-Text {
+    color: #F49800;
+    font-family: "Poppins", serif;
+    font-weight: bolder;
+}
+.Footer-Frame {
+    width: 100%;
+    background-color: #fea81e;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.Social-Media-Frame {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+i {
+    font-size: 50px;
+    color: #F49800;
+}
+.Footer-Frame-Bodem {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Achtergrond-Landing-Page {
+    width: 100%;
+    height: 725px;
+    display: flex;
+    background-image: url("Afbeeldingen/Achtergrond.png");
+    background-repeat: no-repeat;
+}
+.Achtergrond-Winkel {
+    width: 100%;
+    height: 725px;
+    display: flex;
+    background-repeat: no-repeat;
+}
+.Landing-Page-Links-Frame {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Winkel-Page-Rechts-Frame {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Center-Rij {
+    width: 540px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Landing-Page-Rechts-Frame {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Winkel-Page-Links-Frame {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Voedsel-Afbeelding {
+    width: 460px;
+}
+.Titel-Text {
+    color: black;
+    font-family: "Poppins", serif;
+    font-weight: 550;
+    font-size: 70px;
+}
+.Text-Frame {
+    width: 450px;
+    height: 250px;
+}
+.Text-Frame-Winkel {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Onder-Lijn {
+    width: 430px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #F49800;
+}
+.Niet-Dikgedrukt-Zwarte-Text {
+    color: black;
+    font-family: "Poppins", serif;
+    font-weight: normal;
+}
+.Knop {
+    width: 130px;
+    height: 60px;
+    background-color: #F49800;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.Witte-Text {
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-weight: bolder;
+}
+.Header-Zwarte-Text:hover {
+    transform: translateY(-3px);
+    color: #F49800;
+}
+.Knop:hover {
+    rotate: -5deg;
+}
+.Social-Media-Frame:hover {
+    transform: translateY(-7px);
+    rotate: -5deg;
+}
+
