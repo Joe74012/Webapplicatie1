@@ -4,17 +4,13 @@ html {
 }
 .Header-Frame {
     width: 100%;
-    height: 110px;
+    height: 85px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-}
-.Header-Frame-Bodem {
-    width: 100%;
-    height: 20px;
-    background-color: #fea81e;
+    position: fixed;
 }
 .Toko-Rinus-Logo-Frame {
     width: 300px;
@@ -24,7 +20,7 @@ html {
     align-items: center;
 }
 .Toko-Rinus-Logo {
-    width: 200px;
+    width: 125px;
 }
 a {
     text-decoration: none;
@@ -50,26 +46,26 @@ a {
 .Footer-Frame {
     width: 100%;
     background-color: #fea81e;
-    height: 160px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
 }
 .Social-Media-Frame {
-    width: 80px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 70px;
     border-radius: 100px;
     background-color: #ffffff;
     transition: 0.5s;
 }
 i {
-    font-size: 50px;
+    font-size: 40px;
     color: #F49800;
-}
+} 
 .Footer-Frame-Bodem {
     width: 100%;
     height: 50px;
@@ -78,9 +74,22 @@ i {
     justify-content: center;
     align-items: center;
 }
-.fa-solid fa-user-tie {
-    font-size: 50px;
-    color: #000000;
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #ffffff;
+}
+  
+  /* The progress bar */
+.progress-bar {
+    height: 8px;
+    background-color: #F49800;
+    width: 0%;
 }
 .Achtergrond-Landing-Page {
     width: 100%;
@@ -94,7 +103,6 @@ i {
     height: 725px;
     display: flex;
     background-repeat: no-repeat;
-    background-image: url("Afbeeldingen/Achtergrond2.png");
 }
 .Landing-Page-Links-Frame {
     height: 100%;
