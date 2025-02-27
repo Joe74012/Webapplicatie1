@@ -171,7 +171,7 @@ i {
 }
 .Menu-Rij {
     width: 100%;
-    height: 240px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -192,7 +192,7 @@ i {
     align-items: center;
 }
 .Afbeelding-Van-Eten {
-    width: 180px;
+    width: 170px;
 }
 .Kost-Frame {
     width: 90%;
