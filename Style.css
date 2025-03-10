@@ -5,7 +5,7 @@ html {
 .Header-Frame {
     width: 100%;
     height: 85px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,6 +21,10 @@ html {
 }
 .Toko-Rinus-Logo {
     width: 125px;
+}
+.Onzichtbare-Div {
+    width: 100%;
+    height: 100px;
 }
 a {
     text-decoration: none;
@@ -95,6 +99,67 @@ i {
     background-size: cover;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
+}
+.Achtergrond-Login {
+    width: 100%;
+    height: 800px;
+    background-image: url("Afbeeldingen/Achtergrond-Login.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+}
+.Login-Frame {
+    width: 450px;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+}
+.Login-Frame-Titel {
+    width: 100%;
+    height: 90px;
+    background-color: #F49800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Invul-Login-Rij {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Knop-Rij {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Naam-Frame {
+    width: 350px;
+    height: 65px;
+    background-color: #dcdcdc00;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #F49800;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.Text-Contact {
+    width: 280px;
+    height: 80%;
+    background-color: #dcdcdc00;
+    border-style: none;
+    color: #F49800;
+    font-family: "Poppins", serif;
+    font-weight: 550;
+    font-size: 25px;
 }
 .Titel-Text {
     color: rgb(255, 255, 255);
@@ -110,7 +175,7 @@ i {
 }
 .Text-Frame{
     width: 400px;
-    height: 260px;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -141,6 +206,27 @@ i {
     background-color: #F49800;
     border-radius: 10px;
     display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.Knop-Bewerk {
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.Login-Knop {
+    width: 360px;
+    height: 60px;
+    background-color: #F49800;
+    border-radius: 10px;
+    display: flex;
+    border-style: none;
     justify-content: center;
     align-items: center;
 }
@@ -157,6 +243,7 @@ i {
     height: 60px;
     background-color: #DCDCDC;
     border-radius: 10px;
+    border-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,11 +258,11 @@ i {
 }
 .Menu-Rij {
     width: 100%;
-    height: 300px;
+    height: 500px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
 }
 .Kost-Rij {
     width: 100%;
@@ -184,26 +271,97 @@ i {
     justify-content: center;
     align-items: center;
 }
+.Beschrijving-Rij {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Beschrijving-Frame {
+    width: 75%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Afbeelding-Frame {
     width: 100%;
-    height: 110px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .Afbeelding-Van-Eten {
-    width: 170px;
+    width: 130px;
 }
 .Kost-Frame {
     width: 90%;
-    height: 60px;
+    height: 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 .Product-Frame {
-    width: 220px;
-    height: 220px;
+    width: 400px;
+    height: 265px;
     background-color: #F49800;
-    border-radius: 19px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 10px rgba(124, 124, 124, 0.616);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Winkel-Rij {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Winkel-Frame-Links {
+    width: 25%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Winkel-Frame-Rechts {
+    width: 45%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Text-Frame {
+    width: 400px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.Afbeelding-Winkel {
+    width: 600px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #F49800;
+    border-width: 10px;
+    box-shadow: 0px 25px 10px rgba(124, 124, 124, 0.616);
+}
+.Producten {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Poppins", serif;
+    font-weight: normal;
+}
+.Producten th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F49800;
+    color: white;
+  }
+.Producten td, .Producten th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
