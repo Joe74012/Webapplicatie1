@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winkel | Toko rinus</title>
+    <title>Login | Toko rinus</title>
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,20 +42,27 @@
     </div>
 </header>
 <main>
-    <div class="Onzichtbare-Div"></div>
-    <div class="Winkel-Rij">
-        <div class="Winkel-Frame-Rechts">
-            <img class="Afbeelding-Winkel" src="Afbeeldingen/Toko-rinus-Afbeelding.png" alt="">
-        </div>
-        <div class="Winkel-Frame-Links">
-            <div class="Text-Frame">
-                <h2 class="Zwarte-Titel-Text">De winkel</h2>
+    <div class="Achtergrond-Login">
+        <div class="Login-Frame">
+            <div class="Login-Frame-Titel">
+                <h1 class="Witte-Text">Personeel login</h1>
             </div>
-            <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">De Oosterse Supermarkt aan de Steenbokstraat is tegenwoordig zeer uitgebreid. Aan de linkerzijde staat een enorme koelvitrine met meer dan 65 verschillende gerechten/zoete -en hartige snacks.</h3>
+            <div class="Invul-Login-Rij">
+                <div class="Naam-Frame">
+                    <input class="Text-Contact" name="name" placeholder="Naam">
+                    <i class="fa-solid fa-user"></i>
+                </div>
             </div>
-            <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Wij importeren elke week vanuit Indonesie, Thailand of Suriname verse groenten en fruit.</h3>
+            <div class="Invul-Login-Rij">
+                <div class="Naam-Frame">
+                    <input class="Text-Contact" name="name" placeholder="Wachtwoord">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </div>
+            <div class="Knop-Rij">
+                <a href="Formulier.html" class="Login-Knop">
+                    <h2 class="Witte-Text">login</h2>
+                </a>
             </div>
         </div>
     </div>
