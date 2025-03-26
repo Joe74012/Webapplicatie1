@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu | Toko Rinus</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
 </head>
@@ -42,10 +41,10 @@
     </div>
 </header>
 <form class="Zoek" name="ZoekBalk" action="Menu.php" method="post">
-    <input class="InvoerVeld" type="text" name="Text">
-    <div> <button class="ZoekKnop" type="submit" name="Verzenden">
-            <i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+        <input class="InvoerVeld" type="text" name="Text">
+        <div> <button class="ZoekKnop" type="submit" name="Verzenden">
+                <i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
 </form>
 <?php
 if (isset($_POST['Verzenden'])) {
@@ -64,23 +63,6 @@ while ($Menu = $stmt->fetch()) {
 }
 ?>
 <footer>
-    <div class="Footer-Frame">
-        <a href="https://www.instagram.com/tokorinus/">
-            <div class="Social-Media-Frame">
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </a>
-        <a href="https://www.facebook.com/tokorinus/?locale=nl_NL">
-            <div class="Social-Media-Frame">
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c7088d6d0594fd:0xcd7e9c4b98504452?sa=X&ved=1t:8290&ictx=111">
-            <div class="Social-Media-Frame">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-        </a>
-    </div>
 </footer>
 </body>
 </html>

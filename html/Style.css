@@ -26,12 +26,26 @@ button {
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 52px;
-    border-style: none;
+    height: 50px;
 }
 i {
     color: white;
     font-size: 25px;
+}
+.Bericht-Rij {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Keuze-Rij {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .Beschrijving {
     color: #ffffff;
@@ -47,19 +61,16 @@ i {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 20px;
     width: 100%;
-    height: 160px;
-    margin-bottom: 30px;
+    height: 140px;
     gap: 10px;
     border-style: none;
 }
 .InvoerVeld {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
+    color: #F49800;
     width: 250px;
-    height: 45px;
+    height: 50px;
     border-style: solid;
 }
 body,
@@ -105,30 +116,46 @@ a {
     font-weight: bolder;
     transition: 0.5s;
 }
+.AdminToevoegen {
+    width: 100%;
+    height: 200px;
+    background-color: #F49800;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Admin-Uitleg-Rij {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 .Footer-Frame {
     width: 100%;
-    height: 110px;
+    height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #494949;
 }
-.Social-Media-Frame {
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    border-radius: 100px;
-    background-color: #F49800;
-    transition: 0.5s;
-}
-.Footer-Frame-Bodem {
+.Admin-Navigatie-Rij {
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+.Sociale-Media-Rij {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-self: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 .header {
     position: fixed;
@@ -150,7 +177,7 @@ a {
 .Achtergrond-Welkom {
     width: 100%;
     height: 800px;
-    background-image: url("../Afbeeldingen/Achtergrond.png");
+    background-image: url("Afbeeldingen/Achtergrond.png");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -162,7 +189,7 @@ a {
 .Achtergrond-Login {
     width: 100%;
     height: 800px;
-    background-image: url("../Afbeeldingen");
+    background-image: url("Afbeeldingen/Achtergrond-Login.png");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
