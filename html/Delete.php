@@ -3,6 +3,15 @@ session_start();
 if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
     header("Location: Index.php");
 }
+if (isset($_POST['Verstuur'])) {
+    $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
+    $Id = $_GET["id"];
+    $sql = "DELETE FROM Menu where Id=$Id";
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
+    header("Location: DeleteMenu.php");
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,17 +27,17 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
 </head>
 <body>
     <div class="Bericht-Rij">
-        <h2 class="Header-Zwarte-Text">Weet u zeker dat uw dit gerecht wil verwijderen?</h2>
+        <h2 class="Header-Zwarte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
     </div>
-    <div class="Keuze-Rij">
-        <a href="Admin.php">
+    <form method="post" class="Keuze-Rij">
+        <a href="DeleteMenu.php">
             <div class="Knop">
-                <h2 class="Witte-Text">Nee</h2>
+                <i class="fa-solid fa-xmark"></i>
             </div>
         </a>
-        <div class="Knop">
-            <h2 class="Witte-Text">Ja</h2>
-        </div>
-    </div>
+        <button type="submit" name="Verstuur" class="Knop">
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </form>
 </body>
 </html>

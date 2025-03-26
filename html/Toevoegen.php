@@ -31,11 +31,13 @@ if (isset($_POST['Verstuur']))
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<form class="AdminToevoegen" name="AdminToevoegen" method="post">
-    <input class="Naam-Rij" placeholder="Naam" type="text" name="naam">
-    <input class="Beschrijving-Rij" placeholder="Beschrijving" type="text" name="beschrijving">
-    <input class="Prijs-Rij" placeholder="Prijs" type="text" name="prijs">
-    <button class="Verzenden" type="submit" name="Verstuur">
-</form>
+<div class="Toevoegen-Frame">
+    <form class="AdminToevoegen" name="AdminToevoegen" method="post">
+        <input class="Naam-Rij" placeholder="Naam" type="text" name="naam">
+        <input class="Beschrijving-Rij" placeholder="Beschrijving" type="text" name="beschrijving">
+        <input class="Prijs-Rij" placeholder="Prijs" type="text" name="prijs">
+        <button class="Verzenden" type="submit" name="Verstuur">
+    </form>
+</div>
 </body>
 </html>

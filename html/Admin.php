@@ -41,7 +41,7 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
     </nav>
 </header>
     <div class="Admin-Uitleg-Rij">
-        <h2 class="Niet-Dikgedrukt-Zwarte-Text">Welkom bij de admin pagina wat wilt u doen?</h2>
+        <h2 class="Header-Zwarte-Text">Welkom bij de admin pagina wat wilt u doen?</h2>
     </div>
 <div class="Admin-Navigatie-Rij">
     <a href="Toevoegen.php">
@@ -49,7 +49,7 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
             <i class="fa-solid fa-square-plus"></i>
         </div>
     </a>
-    <a href="Delete.php">
+    <a href="DeleteMenu.php">
         <div class="Knop">
             <i class="fa-solid fa-trash"></i>
         </div>
