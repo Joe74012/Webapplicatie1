@@ -19,25 +19,29 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
 <body>
 <header>
     <nav>
-        <div class="Header-Frame">
-            <div class="Toko-Rinus-Logo-Frame">
-                <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+        <div class="Header-Rij">
+            <div class="Header-Frame">
+                <div class="Toko-Rinus-Logo-Frame">
+                    <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+                </div>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Index.php">
+                    <h2 class="Header-Zwarte-Text">Home</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Menu.php">
+                    <h2 class="Header-Zwarte-Text">Menu</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Winkel.php">
+                    <h2 class="Header-Zwarte-Text">Winkel</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Login.php">
+                    <h2 class="Header-Zwarte-Text">login</h2>
+                </a>
             </div>
-            <a href="Index.php">
-                <h2 class="Header-Zwarte-Text">Home</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Menu.php">
-                <h2 class="Header-Zwarte-Text">Menu</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Winkel.php">
-                <h2 class="Header-Zwarte-Text">Winkel</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Login.php">
-                <h2 class="Header-Zwarte-Text">login</h2>
-            </a>
+        </div>
     </nav>
 </header>
     <div class="Admin-Uitleg-Rij">
@@ -45,20 +49,33 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
     </div>
 <div class="Admin-Navigatie-Rij">
     <a href="Toevoegen.php">
-        <div class="Knop">
+        <div class="Groene-Knop">
             <i class="fa-solid fa-square-plus"></i>
         </div>
     </a>
-    <a href="DeleteMenu.php">
-        <div class="Knop">
-            <i class="fa-solid fa-trash"></i>
-        </div>
-    </a>
-    <a href="Toevoegen.php">
-        <div class="Knop">
-            <i class="fa-solid fa-pen"></i>
-        </div>
-    </a>
 </div>
+<?php
+$sql = "SELECT * FROM `Menu`";
+$connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
+$stmt = $connection->query($sql);
+while ($Menu = $stmt->fetch()) {
+    echo "<div class='MenuFrame-Admin'> 
+    <h1 class='naam'>" . $Menu["Naam"] . "</h1>
+    <h3 class='Beschrijving'>" . $Menu["Beschrijving"] . "</h3>
+    <h2 class='Beschrijving'>" . "€" . $Menu["Prijs"] . "</h2>
+    <a href='Delete.php?id=" . $Menu["Id"] . "'>
+    <div class='Bewerk-Verwijder-Rij'>
+        <div class='Rode-Knop'>
+        <i class='fa-solid fa-trash'></i>
+        </div>
+        <div class='Blauwe-Knop'>
+        <i class='fa-solid fa-pen'></i>
+        </div>
+    </div>
+</div>
+</a>
+</div>";
+}
+?>
 </body>
 </html>

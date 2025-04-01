@@ -12,27 +12,30 @@
 <body>
 <header>
     <nav>
-        <div class="Header-Frame">
-            <div class="Toko-Rinus-Logo-Frame">
-                <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+        <div class="Header-Rij">
+            <div class="Header-Frame">
+                <div class="Toko-Rinus-Logo-Frame">
+                    <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+                </div>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Index.php">
+                    <h2 class="Header-Zwarte-Text">Home</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Menu.php">
+                    <h2 class="Header-Zwarte-Text">Menu</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Winkel.php">
+                    <h2 class="Header-Zwarte-Text">Winkel</h2>
+                </a>
+                <h1 class="Oranje-Text">●</h1>
+                <a href="Login.php">
+                    <h2 class="Header-Zwarte-Text">login</h2>
+                </a>
             </div>
-            <a href="Index.php">
-                <h2 class="Header-Zwarte-Text">Home</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Menu.php">
-                <h2 class="Header-Zwarte-Text">Menu</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Winkel.php">
-                <h2 class="Header-Zwarte-Text">Winkel</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
-            <a href="Login.php">
-                <h2 class="Header-Zwarte-Text">login</h2>
-            </a>
+        </div>
     </nav>
-    </div>
     <div class="header">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -56,7 +59,7 @@ $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpass
 $stmt = $connection->query($sql);
 while ($Menu = $stmt->fetch()) {
     echo "<div class='MenuFrame'> 
-    <h1 class='naam'>" . $Menu["Id"] . ". " . $Menu["Naam"] . "</h1>
+    <h1 class='naam'>" . $Menu["Naam"] . "</h1>
     <h3 class='Beschrijving'>" . $Menu["Beschrijving"] . "</h3>
     <h2 class='Beschrijving'>" . "€" . $Menu["Prijs"] . "</h2>
 </div>";

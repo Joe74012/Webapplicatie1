@@ -24,13 +24,12 @@
 }
 .Toevoegen-Frame {
     width: 100%;
-    height: 60%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F49800;
 }
-.RodeKnop {
+.Rode-Knop {
     width: 160px;
     height: 60px;
     background-color: #f40000;
@@ -39,6 +38,43 @@
     border-style: none;
     justify-content: center;
     align-items: center;
+}
+.Blauwe-Knop {
+    width: 160px;
+    height: 60px;
+    background-color: #105cff;
+    border-radius: 10px;
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.Groene-Knop {
+    width: 200px;
+    height: 60px;
+    background-color: #27e30a;
+    border-radius: 10px;
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Terug-Knop {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Delete-Rij {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .naam {
@@ -50,6 +86,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.Toevoegen-Rij {
+    width: 200px;
+    border-color: #F49800;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    height: 30px;
+}
+.Verzenden {
+    background-color: #F49800;
+    border-style: none;
+    border-radius: 10px;
+    width: 100px;
 }
 button {
     background: #F49800;
@@ -115,20 +165,32 @@ html {
     margin: 0;
 }
 .Header-Frame {
-    width: 100%;
-    height: 85px;
-    background-color: #ffffff;
+    width: 50%;
+    height: 75px;
+    background-color: #fefefe;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    position: fixed;
+    gap: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 3px rgba(200, 200, 200, 0.32);
+
 }
-.Toko-Rinus-Logo-Frame {
-    width: 150px;
-    height: 100%;
+.Header-Rij {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(244, 152, 0, 0);
+    position: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.Toko-Rinus-Logo-Frame {
+    width: 120px;
+    height: 100%;
+    background-color: rgba(244, 152, 0, 0);
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 .Toko-Rinus-Logo {
@@ -152,16 +214,17 @@ a {
     font-family: "Poppins", serif;
     font-weight: bolder;
     transition: 0.5s;
+
 }
 .AdminToevoegen {
-    height: 500px;
-    width: 50%;
+    height: 65%;
+    width: 25%;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #ffffff;
 }
 .Admin-Uitleg-Rij {
     width: 100%;
@@ -180,11 +243,10 @@ a {
 }
 .Admin-Navigatie-Rij {
     width: 100%;
-    height: 60px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 .Sociale-Media-Rij {
     width: 300px;
@@ -199,29 +261,26 @@ a {
     z-index: 10;
     width: 100%;
 }
-.progress-container {
-    width: 100%;
-    height: 8px;
-    background-color: #ffffff;
-}
-
-/* The progress bar */
-.progress-bar {
-    height: 8px;
-    background-color: #F49800;
-    width: 0;
-}
 .Achtergrond-Welkom {
     width: 100%;
-    height: 800px;
-    background-image: url("Afbeeldingen/Achtergrond.png");
+    height: 700px;
+    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     background-size: cover;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+}
+.Rechter-Rij {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AfbeeldingEten {
+    width: 500px;
 }
 .Achtergrond-Login {
     width: 100%;
@@ -259,6 +318,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .Naam-Frame {
     width: 350px;
@@ -285,21 +345,23 @@ a {
 }
 .Titel-Text {
     color: rgb(255, 255, 255);
-    font-family: "Poppins", serif;
-    font-weight: 550;
-    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 55px;
 }
 .Zwarte-Titel-Text {
     color: rgb(0, 0, 0);
-    font-family: "Poppins", serif;
-    font-weight: 550;
-    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 1000;
+    font-size: 55px;
 }
 .Text-Frame{
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .Border {
     background-color: #F49800;
@@ -319,7 +381,7 @@ a {
 }
 .Witte-Text {
     color: #ffffff;
-    font-family: "Poppins", serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: bolder;
 }
 .Knop {
@@ -331,6 +393,16 @@ a {
     border-style: none;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.Bewerk-Verwijder-Rij {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .Knop-Bewerk {
     width: 100px;
@@ -371,7 +443,7 @@ a {
     align-items: center;
 }
 .Winkel-Frame-Links {
-    width: 33%;
+    width: 35%;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -384,18 +456,34 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 20px;
 }
 .Text-Frame {
     width: 400px;
     height: 160px;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 .Afbeelding-Winkel {
     width: 600px;
     border-radius: 30px;
     border-style: solid;
-    border-color: #F49800;
-    border-width: 10px;
     box-shadow: 0px 25px 10px rgba(124, 124, 124, 0.616);
+}
+.Afbeelding-Over-Ons {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 10px rgba(124, 124, 124, 0.616);
+}
+
+.Header-Zwarte-Text:hover {
+    transform: translateY(-3px);
+    transform: rotate(4deg);
+}
+.Knop:hover {
+    transform: translateY(-3px);
+    transform: rotate(4deg);
+    cursor: pointer;
 }

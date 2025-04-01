@@ -31,13 +31,42 @@ if (isset($_POST['Verstuur']))
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<div class="Toevoegen-Frame">
-    <form class="AdminToevoegen" name="AdminToevoegen" method="post">
-        <input class="Naam-Rij" placeholder="Naam" type="text" name="naam">
-        <input class="Beschrijving-Rij" placeholder="Beschrijving" type="text" name="beschrijving">
-        <input class="Prijs-Rij" placeholder="Prijs" type="text" name="prijs">
-        <button class="Verzenden" type="submit" name="Verstuur">
-    </form>
+<nav>
+    <div class="Header-Rij">
+        <div class="Header-Frame">
+            <div class="Toko-Rinus-Logo-Frame">
+                <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+            </div>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Index.php">
+                <h2 class="Header-Zwarte-Text">Home</h2>
+            </a>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Menu.php">
+                <h2 class="Header-Zwarte-Text">Menu</h2>
+            </a>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Winkel.php">
+                <h2 class="Header-Zwarte-Text">Winkel</h2>
+            </a>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Login.php">
+                <h2 class="Header-Zwarte-Text">login</h2>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="Achtergrond-Login">
+    <div class="Login-Frame">
+        <div class="Toevoegen-Frame">
+            <form class="AdminToevoegen" name="AdminToevoegen" method="post">
+                <input class="Toevoegen-Rij" placeholder="Naam" type="text" name="naam">
+                <input class="Toevoegen-Rij" placeholder="Beschrijving" type="text" name="beschrijving">
+                <input class="Toevoegen-Rij" placeholder="Prijs" type="text" name="prijs">
+                <button class="Verzenden" type="submit" name="Verstuur">
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>

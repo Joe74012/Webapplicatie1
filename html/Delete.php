@@ -4,12 +4,12 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
     header("Location: Index.php");
 }
 if (isset($_POST['Verstuur'])) {
-    $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
     $Id = $_GET["id"];
+    $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
     $sql = "DELETE FROM Menu where Id=$Id";
     $stmt = $connection->prepare($sql);
     $stmt->execute();
-    header("Location: DeleteMenu.php");
+    header("Location: Admin.php");
 }
 
 ?>
@@ -26,18 +26,21 @@ if (isset($_POST['Verstuur'])) {
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="Bericht-Rij">
-        <h2 class="Header-Zwarte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
+    <div class="Delete-Rij">
+        <div class="Bericht-Rij">
+            <h2 class="Header-Zwarte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
+        </div>
+
+        <form method="post" class="Keuze-Rij">
+            <a href="Admin.php">
+                <div class="Knop">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </a>
+            <button type="submit" name="Verstuur" class="Knop">
+                <i class="fa-solid fa-check"></i>
+            </button>
+        </form>
     </div>
-    <form method="post" class="Keuze-Rij">
-        <a href="DeleteMenu.php">
-            <div class="Knop">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </a>
-        <button type="submit" name="Verstuur" class="Knop">
-            <i class="fa-solid fa-check"></i>
-        </button>
-    </form>
 </body>
 </html>
