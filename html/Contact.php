@@ -5,13 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu | Toko Rinus</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Contact | Toko rinus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="Body-Menu">
+<body>
 <header>
     <nav>
         <div class="Header-Rij">
@@ -38,41 +40,26 @@
             </div>
         </div>
     </nav>
-    <div class="header">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-        <!--Einde van Progress bar-->
-    </div>
 </header>
-<div class="Onzichtbare-Div-Klein"></div>
-<form class="Zoek" name="ZoekBalk" action="Menu.php" method="post">
-    <input class="InvoerVeld" type="text" name="Text">
-    <div>
-        <button class="ZoekKnop" type="submit" name="Verzenden">
-            <i class="fa-solid fa-magnifying-glass"></i></button>
+<main>
+    <div class="Onzichtbare-Div"></div>
+    <div class="Contact-Rij">
+        <div class="Contact-Frame">
+            <i id="Logo" class="fa-solid fa-phone"></i>
+            <h2 class="Witte-Text">Telefoon nummer</h2>
+            <h3 class="Witte-Text">024 - 3556863</h3>
+        </div>
+        <div class="Contact-Frame">
+            <i id="Logo" class="fa-solid fa-envelope"></i>
+            <h2 class="Witte-Text">Email</h2>
+            <h3 class="Witte-Text">info@tokorinus.nl</h3>
+        </div>
+        <div class="Contact-Frame">
+            <i id="Logo" class="fa-solid fa-location-dot"></i>
+            <h2 class="Witte-Text">Locatie</h2>
+            <h3 class="Witte-Text">Steenbokstraat 18-20, 6531 TG Nijmegen</h3>
+        </div>
     </div>
-</form>
-
-<?php
-if (isset($_POST['Verzenden'])) {
-    $sql = "SELECT * FROM `Menu` WHERE Naam LIKE '%" . $_POST['Text'] . "%'";
-} else {
-    $sql = "SELECT * FROM `Menu`";
-}
-
-$connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
-$stmt = $connection->query($sql);
-while ($Menu = $stmt->fetch()) {
-    echo "<div class='MenuFrame'> 
-    <h1 class='naam'>" . $Menu["Naam"] . "</h1>
-    <p class='Beschrijving'>" . $Menu["Beschrijving"] . "</p>
-    <h2 class='Beschrijving'>" . "€" . $Menu["Prijs"] . "</h2>
-</div>";
-}
-?>
-<footer>
-</footer>
+</main>
 </body>
 </html>
-

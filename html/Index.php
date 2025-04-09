@@ -6,7 +6,8 @@
     <title>Home | Toko rinus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,8 +28,8 @@
                     <h2 class="Header-Zwarte-Text">Menu</h2>
                 </a>
                 <h1 class="Oranje-Text">●</h1>
-                <a href="Winkel.php">
-                    <h2 class="Header-Zwarte-Text">Winkel</h2>
+                <a href="Contact.php">
+                    <h2 class="Header-Zwarte-Text">Contact</h2>
                 </a>
                 <h1 class="Oranje-Text">●</h1>
                 <a href="Login.php">
@@ -37,12 +38,6 @@
             </div>
         </div>
     </nav>
-    <div class="header">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-        <!--Einde van Progress bar-->
-    </div>
 </header>
 <main>
     <div class="Achtergrond-Welkom">
@@ -56,15 +51,16 @@
                         <h2 class="Witte-Text">Menu</h2>
                     </button>
                 </a>
-                <a href="Winkel.php">
+                <a href="Contact.php">
                     <button class="Knop">
-                        <h2 class="Witte-Text">Winkel</h2>
+                        <h2 class="Witte-Text">Contact</h2>
                     </button>
                 </a>
             </div>
         </div>
         <div class="Rechter-Rij">
-            <img class="AfbeeldingEten" src="Afbeeldingen/pngtree-delicious-indian-curry-thali-with-naan-and-rice-png-image_15104750.png">
+            <img class="AfbeeldingEten"
+                 src="Afbeeldingen/pngtree-delicious-indian-curry-thali-with-naan-and-rice-png-image_15104750.png">
         </div>
     </div>
     <div class="Winkel-Rij">
@@ -77,10 +73,13 @@
                 <h2 class="Zwarte-Titel-Text">OVER ONS</h2>
             </div>
             <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Bij Toko rinus zijn wij een Afhaalcentrum, winkel, mini-restaurant en cateraar. Wij importeren elke week vanuit Indonesie de verste groenten en fruit en maken wij heerlijke indische gerechten die je kan vinden bij het menu.</h3>
+                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Bij Toko rinus zijn wij een Afhaalcentrum, winkel,
+                    mini-restaurant en cateraar. Wij importeren elke week vanuit Indonesie de verste groenten en fruit
+                    en maken wij heerlijke indische gerechten die je kan vinden bij het menu.</h3>
             </div>
             <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Onze 5 koks staan dagelijks meer dan 65 verschillende gerechten te bereiden en onze medewerkers zorgen ervoor dat onze winkelgedeelte gevuld blijft.</h3>
+                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Onze 5 koks staan dagelijks meer dan 65 verschillende gerechten
+                    te bereiden en onze medewerkers zorgen ervoor dat onze winkelgedeelte gevuld blijft.</h3>
             </div>
         </div>
     </div>
@@ -90,17 +89,21 @@
                 <h2 class="Zwarte-Titel-Text">HET MENU</h2>
             </div>
             <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Ons menu heeft Varkensvleesgerechten, Rundvleesgerechten, Kipgerechten, Visgerechten, Satégerechten, Groentegerechten, Eiergerechten, Bijgerechten, snacks en hapjes</h3>
+                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Ons menu heeft Varkensvleesgerechten, Rundvleesgerechten,
+                    Kipgerechten, Visgerechten, Satégerechten, Groentegerechten, Eiergerechten, Bijgerechten, snacks en
+                    hapjes</h3>
             </div>
             <div class="Text-Frame">
-                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Voorbeelden van onze producten: Rames 'Toko Rinus', Surinaams menu, Gado Gado schotel, Soto ajam, Babi pangang spek, Gehaktballen chili, Ayam Goreng-saté, Bakkeljauw en nog veel meer.</h3>
+                <h3 class="Niet-Dikgedrukt-Zwarte-Text">Voorbeelden van onze producten: Rames 'Toko Rinus', Surinaams
+                    menu, Gado Gado schotel, Soto ajam, Babi pangang spek en nog veel meer.</h3>
             </div>
         </div>
         <div class="Winkel-Frame-Rechts">
+            <img class="Afbeelding-Over-Ons" src="Afbeeldingen/P1020703.jpg" alt="">
             <img class="Afbeelding-Over-Ons" src="Afbeeldingen/Gerechten2.jpeg" alt="">
-            <img class="Afbeelding-Over-Ons" src="Afbeeldingen/toko-rinus_0193d4b1-7775-70f1-bdcd-608d279d0089.jpg" alt="">
         </div>
     </div>
+
 </main>
 <footer>
 
