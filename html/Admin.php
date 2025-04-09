@@ -63,17 +63,19 @@ while ($Menu = $stmt->fetch()) {
     <h1 class='naam'>" . $Menu["Naam"] . "</h1>
     <h3 class='Beschrijving'>" . $Menu["Beschrijving"] . "</h3>
     <h2 class='Beschrijving'>" . "€" . $Menu["Prijs"] . "</h2>
-    <a href='Delete.php?id=" . $Menu["Id"] . "'>
     <div class='Bewerk-Verwijder-Rij'>
+        <a href='Delete.php?id=" . $Menu["Id"] . "'>
         <div class='Rode-Knop'>
         <i class='fa-solid fa-trash'></i>
         </div>
+        </a>
+        <a href='Bewerk.php?id=" . $Menu["Id"] . "'>
         <div class='Blauwe-Knop'>
         <i class='fa-solid fa-pen'></i>
         </div>
+        </a>
     </div>
 </div>
-</a>
 </div>";
 }
 ?>

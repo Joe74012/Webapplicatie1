@@ -46,7 +46,7 @@
     </div>
 </header>
 <div class="Onzichtbare-Div-Klein"></div>
-<form class="Zoek" name="ZoekBalk" action="Menu.php" method="post">
+<form class="Zoek" name="ZoekBalk" action="Menu.php" method="get">
     <input class="InvoerVeld" type="text" name="Text">
     <div>
         <button class="ZoekKnop" type="submit" name="Verzenden">
@@ -55,8 +55,8 @@
 </form>
 
 <?php
-if (isset($_POST['Verzenden'])) {
-    $sql = "SELECT * FROM `Menu` WHERE Naam LIKE '%" . $_POST['Text'] . "%'";
+if (isset($_GET['Verzenden'])) {
+    $sql = "SELECT * FROM `Menu` WHERE Naam LIKE '%" . $_GET['Text'] . "%'";
 } else {
     $sql = "SELECT * FROM `Menu`";
 }
