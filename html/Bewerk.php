@@ -5,6 +5,10 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] != true) {
 }
 ?>
 <?php
+if (isset($_POST['Terug'])) {
+    header("Location: Admin.php");
+}
+
 if (isset($_POST['Verstuur'])) {
 
     $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
@@ -17,6 +21,11 @@ if (isset($_POST['Verstuur'])) {
     $stmt->execute();
     header("Location: Admin.php");
 }
+$Id = $_GET["id"];
+$sql = "SELECT * FROM Menu where Id=$Id";
+$connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
+$stmt = $connection->query($sql);
+$Menu = $stmt->fetch();
 ?>
 <!doctype html>
 <html lang="en">
@@ -47,24 +56,23 @@ if (isset($_POST['Verstuur'])) {
                 <h2 class="Header-Zwarte-Text">Menu</h2>
             </a>
             <h1 class="Oranje-Text">●</h1>
-            <a href="Winkel.php">
-                <h2 class="Header-Zwarte-Text">Winkel</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
             <a href="Login.php">
                 <h2 class="Header-Zwarte-Text">login</h2>
             </a>
         </div>
     </div>
 </nav>
-<div class="Achtergrond-Login">
-    <div class="Login-Frame">
+<div class="Achtergrond-Bewerk">
         <div class="Toevoegen-Frame">
             <form class="AdminToevoegen" name="AdminToevoegen" method="post">
-                <input class="Toevoegen-Rij" placeholder="Naam" type="text" name="Naam">
-                <input class="Toevoegen-Rij" placeholder="Beschrijving" type="text" name="Beschrijving">
-                <input class="Toevoegen-Rij" placeholder="Prijs" type="text" name="Prijs">
+                <input class="Toevoegen-Rij" value="<?php echo $Menu["Naam"] ?>" type="text" name="Naam">
+                <input class="Toevoegen-Rij" value="<?php echo $Menu["Beschrijving"] ?>" placeholder="Beschrijving" type="text" name="Beschrijving">
+                <input class="Toevoegen-Rij" value="<?php echo $Menu["Prijs"] ?>" placeholder="Prijs" type="text" name="Prijs">
+                <div class="Knop-Rij-Bewerk">
                 <button class="Verzenden" type="submit" name="Verstuur">
+                    <h2 class="Witte-Text">Bewerk</h2>
+                    <button class="Verzenden" type="submit" name="Terug">
+                        <h2 class="Witte-Text">Terug</h2>
             </form>
         </div>
     </div>

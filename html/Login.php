@@ -1,7 +1,15 @@
 <?php
-session_start();
 if(isset($_POST["Login-Knop"])){
-    if($_POST["naam"] == "Joe" && $_POST["wachtwoord"] == "Wachtwoord"){
+$connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
+$sql = "SELECT * FROM 'Gebruikers' WHERE 'Wachtwoord' = :Wachtwoord AND Naam = :Naam";
+$stmt = $connection->prepare($sql);
+$stmt->bindParam(":Naam", $_POST['Naam']);
+$stmt->bindParam(":Wachtwoord", $_POST['Wachtwoord']);
+$stmt->execute();
+session_start();
+$gebruiker = $stmt->fetch();
+
+    if($gebruiker){
         $_SESSION["admin"] = true;
         header("Location: Admin.php");
     }
@@ -63,13 +71,13 @@ if(isset($_POST["Login-Knop"])){
             <form action="Login.php" method="post">
                 <div class="Invul-Login-Rij">
                     <div class="Naam-Frame">
-                        <input class="Text-Contact" name="naam" placeholder="Naam">
+                        <input class="Text-Contact" name="Naam" placeholder="Naam">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
                 <div class="Invul-Login-Rij">
                     <div class="Naam-Frame">
-                        <input class="Text-Contact" type="password" name="wachtwoord" placeholder="Wachtwoord">
+                        <input class="Text-Contact" type="password" name="Wachtwoord" placeholder="Wachtwoord">
                         <i class="fa-solid fa-lock"></i>
                     </div>
                 </div>

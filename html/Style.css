@@ -13,7 +13,7 @@
 .MenuFrame-Admin {
     background: #F49800;
     width: 75%;
-    height: 350px;
+    height: 380px;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -94,12 +94,20 @@
 }
 
 .Toevoegen-Rij {
-    width: 200px;
+    width: 300px;
     border-color: #F49800;
     border-style: solid;
-    border-radius: 10px;
-    border-width: 5px;
-    height: 30px;
+    border-radius: 15px;
+    border-width: 6px;
+    height: 45px;
+}
+.Knop-Rij-Bewerk {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
 }
 
 .Verzenden {
@@ -280,14 +288,15 @@ a {
 }
 
 .AdminToevoegen {
-    height: 65%;
-    width: 25%;
+    height: 350px;
+    width: 450px;
     display: flex;
     gap: 10px;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
 }
 
 .Admin-Uitleg-Rij {
@@ -341,6 +350,16 @@ a {
     align-items: center;
     gap: 50px;
 }
+.Achtergrond-Bewerk {
+    width: 100%;
+    height: 800px;
+    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+}
 
 .Rechter-Rij {
     height: 100%;
@@ -368,9 +387,13 @@ a {
 }
 
 .Login-Frame {
-    width: 450px;
-    height: 430px;
-    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Login-Frame-Titel {
