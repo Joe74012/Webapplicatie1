@@ -1,3 +1,6 @@
+/* Begin van de CSS code waar ik de verschillende objecten op de website kan decoreren zodat ze er beter uitzien. */
+
+
 .MenuFrame {
     background: #F49800;
     width: 60%;
@@ -219,7 +222,7 @@ html {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
+    background-image: url("../Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -299,6 +302,16 @@ a {
     flex-direction: column;
     background-color: rgb(255, 255, 255);
 }
+.Delete-Frame {
+    height: 140px;
+    width: 500px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
 
 .Admin-Uitleg-Rij {
     width: 100%;
@@ -343,7 +356,7 @@ a {
 .Achtergrond-Welkom {
     width: 100%;
     height: 700px;
-    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
+    background-image: url("../Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -354,7 +367,7 @@ a {
 .Achtergrond-Bewerk {
     width: 100%;
     height: 800px;
-    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
+    background-image: url("../Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -364,7 +377,7 @@ a {
 .Achtergrond-Delete {
     width: 100%;
     height: 700px;
-    background-image: url("Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
+    background-image: url("../Afbeeldingen/painted-wooden-plank-textured-backdrop.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -382,14 +395,13 @@ a {
 
 .AfbeeldingEten {
     width: 600px;
-    border-radius: 50%;
     box-shadow: 0px 50px 50px rgba(28, 28, 28, 0.32);
 }
 
 .Achtergrond-Login {
     width: 100%;
     height: 800px;
-    background-image: url("Afbeeldingen/Achtergrond-Login.png");
+    background-image: url("../Afbeeldingen/Achtergrond-Login.png");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -400,7 +412,7 @@ a {
 .Login-Frame {
     width: 400px;
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -430,6 +442,7 @@ a {
     width: 100%;
     height: 120px;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }

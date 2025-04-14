@@ -20,12 +20,14 @@ if (isset($_POST['Verstuur'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Delete | Toko Rinus</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--Begin van de Delete pagina waar de eigenaar gerechten kan verwijderen.-->
 <nav>
     <div class="Header-Rij">
         <div class="Header-Frame">
@@ -48,21 +50,21 @@ if (isset($_POST['Verstuur'])) {
     </div>
 </nav>
 <div class="Achtergrond-Delete">
-    <div class="Delete-Rij">
+    <div class="Delete-Frame">
         <div class="Bericht-Rij">
-            <h2 class="Witte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
+            <h3 class="Zwarte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h3>
         </div>
 
-        <form method="post" class="Keuze-Rij">
-            <a href="Admin.php">
-                <div class="Knop">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-            </a>
-            <button type="submit" name="Verstuur" class="Knop">
-                <i class="fa-solid fa-check"></i>
-            </button>
-        </form>
+            <form method="post" class="Keuze-Rij">
+                <a href="Admin.php">
+                    <div class="Knop">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </a>
+                <button type="submit" name="Verstuur" class="Knop">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </form>
     </div>
 </div>
 </body>

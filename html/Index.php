@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Toko rinus</title>
+    <title>Home | Toko Rinus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
           rel="stylesheet">
-    <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/Style.css">
     <script src="Functie.js"></script>
 </head>
 <body>
+<!--Begin van de home pagina die info bevat.-->
 <header>
     <nav>
         <div class="Header-Rij">
@@ -88,7 +89,8 @@
             <div class="Text-Frame">
                 <h3 class="Niet-Dikgedrukt-Zwarte-Text">Ons menu heeft Varkensvleesgerechten, Rundvleesgerechten,
                     Kipgerechten, Visgerechten, Satégerechten, Groentegerechten, Eiergerechten, Bijgerechten, snacks en
-                    hapjes</h3>
+                    hapjes.
+                </h3>
             </div>
             <div class="Text-Frame">
                 <h3 class="Niet-Dikgedrukt-Zwarte-Text">Voorbeelden van onze producten: Rames 'Toko Rinus', Surinaams
@@ -102,9 +104,6 @@
     </div>
 
 </main>
-<footer>
-
-</footer>
 </body>
 </html>
 
