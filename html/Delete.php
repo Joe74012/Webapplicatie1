@@ -26,9 +26,31 @@ if (isset($_POST['Verstuur'])) {
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav>
+    <div class="Header-Rij">
+        <div class="Header-Frame">
+            <div class="Toko-Rinus-Logo-Frame">
+                <img class="Toko-Rinus-Logo" src="Afbeeldingen/Toko-Rinus-Logo.png" alt="Toko Rinus logo">
+            </div>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Index.php">
+                <h2 class="Header-Zwarte-Text">Home</h2>
+            </a>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Menu.php">
+                <h2 class="Header-Zwarte-Text">Menu</h2>
+            </a>
+            <h1 class="Oranje-Text">●</h1>
+            <a href="Login.php">
+                <h2 class="Header-Zwarte-Text">login</h2>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="Achtergrond-Delete">
     <div class="Delete-Rij">
         <div class="Bericht-Rij">
-            <h2 class="Header-Zwarte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
+            <h2 class="Witte-Text">Weet u zeker dat uw dit product wilt verwijderen?</h2>
         </div>
 
         <form method="post" class="Keuze-Rij">
@@ -42,5 +64,6 @@ if (isset($_POST['Verstuur'])) {
             </button>
         </form>
     </div>
+</div>
 </body>
 </html>

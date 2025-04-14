@@ -10,6 +10,7 @@
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/61f819b69c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="Functie.js"></script>
 </head>
 <body>
 <header>
@@ -26,10 +27,6 @@
                 <h1 class="Oranje-Text">●</h1>
                 <a href="Menu.php">
                     <h2 class="Header-Zwarte-Text">Menu</h2>
-                </a>
-                <h1 class="Oranje-Text">●</h1>
-                <a href="Contact.php">
-                    <h2 class="Header-Zwarte-Text">Contact</h2>
                 </a>
                 <h1 class="Oranje-Text">●</h1>
                 <a href="Login.php">
@@ -51,9 +48,9 @@
                         <h2 class="Witte-Text">Menu</h2>
                     </button>
                 </a>
-                <a href="Contact.php">
-                    <button class="Knop">
-                        <h2 class="Witte-Text">Contact</h2>
+                <a>
+                    <button onclick="myFunction()" class="Knop">
+                        <h2 class="Witte-Text">Over ons</h2>
                     </button>
                 </a>
             </div>

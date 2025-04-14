@@ -1,17 +1,18 @@
 <?php
-if(isset($_POST["Login-Knop"])){
 $connection = new PDO("mysql:dbname=Restaurant;host=mysql_db", "root", "rootpassword");
-$sql = "SELECT * FROM 'Gebruikers' WHERE 'Wachtwoord' = :Wachtwoord AND Naam = :Naam";
-$stmt = $connection->prepare($sql);
-$stmt->bindParam(":Naam", $_POST['Naam']);
-$stmt->bindParam(":Wachtwoord", $_POST['Wachtwoord']);
-$stmt->execute();
 session_start();
-$gebruiker = $stmt->fetch();
-
+if(isset($_POST["Login-Knop"])){
+    $sql = "SELECT * FROM `Gebruikers` WHERE Wachtwoord = :Wachtwoord AND Naam = :Naam";
+    $statement = $connection->prepare($sql);
+    $statement->bindParam(":Naam", $_POST['Naam']);
+    $statement->bindParam(":Wachtwoord", $_POST['Wachtwoord']);
+    $statement->execute();
+    $gebruiker = $statement->fetch();
     if($gebruiker){
         $_SESSION["admin"] = true;
         header("Location: Admin.php");
+    } else {
+        
     }
 }
 ?>
@@ -43,10 +44,6 @@ $gebruiker = $stmt->fetch();
                 <h1 class="Oranje-Text">●</h1>
                 <a href="Menu.php">
                     <h2 class="Header-Zwarte-Text">Menu</h2>
-                </a>
-                <h1 class="Oranje-Text">●</h1>
-                <a href="Contact.php">
-                    <h2 class="Header-Zwarte-Text">Contact</h2>
                 </a>
                 <h1 class="Oranje-Text">●</h1>
                 <a href="Login.php">

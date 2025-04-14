@@ -28,10 +28,6 @@
                     <h2 class="Header-Zwarte-Text">Menu</h2>
                 </a>
                 <h1 class="Oranje-Text">●</h1>
-                <a href="Contact.php">
-                    <h2 class="Header-Zwarte-Text">Contact</h2>
-                </a>
-                <h1 class="Oranje-Text">●</h1>
                 <a href="Login.php">
                     <h2 class="Header-Zwarte-Text">login</h2>
                 </a>

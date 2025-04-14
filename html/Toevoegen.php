@@ -46,10 +46,6 @@ if (isset($_POST['Verstuur']))
                 <h2 class="Header-Zwarte-Text">Menu</h2>
             </a>
             <h1 class="Oranje-Text">●</h1>
-            <a href="Winkel.php">
-                <h2 class="Header-Zwarte-Text">Winkel</h2>
-            </a>
-            <h1 class="Oranje-Text">●</h1>
             <a href="Login.php">
                 <h2 class="Header-Zwarte-Text">login</h2>
             </a>
